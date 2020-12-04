@@ -1,0 +1,12 @@
+To Open: 
+
+In the "GraphicsScene" folder, double click on "GraphicsScence.exe" to open and run the program.
+
+
+Controls: 
+
+W - Forawd in direction of Camera
+S- Backwards in direction of Camera
+A - Left in direction of Camera
+D - Right in Direction of Camera
+Click and Drag - Rotates Camera
