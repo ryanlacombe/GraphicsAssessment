@@ -221,11 +221,13 @@ bool Game::draw()
 	m_shader.bindUniform("ProjectionViewModel", pvm);
 	m_shader.bindUniform("NormalMatrix", glm::inverseTranspose(glm::mat3(m_box->getTransform())));
 	m_shader.bindUniform("ModelMatrix", m_box->getTransform());
+	m_shader.bindUniform("diffuseTexture", 0);
 	m_box->draw();
 
 	//Draw Object Mesh
 	pvm = projectionMatrix * viewMatrix * m_meshTransform;
 	m_shader.bindUniform("ProjectionViewModel", pvm);
+	m_shader.bindUniform("diffuseTexture", 0);
 	m_objMesh.draw();
 
 	aie::Gizmos::draw(projectionMatrix * viewMatrix);
