@@ -1,0 +1,112 @@
+\hypertarget{class_mesh}{}\doxysection{Mesh Class Reference}
+\label{class_mesh}\index{Mesh@{Mesh}}
+
+
+{\ttfamily \#include $<$Mesh.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mesh_1_1_vertex}{Vertex}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mesh_a2af137f1571af89172b9c102302c416b}{Mesh}} ()
+\item 
+\mbox{\hyperlink{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}{$\sim$\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{class_mesh_ada6f83e10fa4e0ef7f8a53a110102584}{initialize}} (unsigned int vertex\+Count, const \mbox{\hyperlink{struct_mesh_1_1_vertex}{Vertex}} $\ast$vertices, unsigned int index\+Count=0, unsigned int $\ast$indices=nullptr)
+\item 
+void \mbox{\hyperlink{class_mesh_a6b0ceb24e421450b3dcbdea8de97c146}{intialize\+Quad}} ()
+\item 
+void \mbox{\hyperlink{class_mesh_a9d606e593a14cf9329eb53dc5e3b693f}{intialize\+Cube}} ()
+\item 
+virtual void \mbox{\hyperlink{class_mesh_a996a8668fa2ca7d95d6d10744c833bc8}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{class_mesh_ad117488e363107c75e1dcbe5d6e31dc1}{m\+\_\+tri\+Count}}
+\item 
+unsigned int \mbox{\hyperlink{class_mesh_a8ebf07f32d4f2c5802954bbdbef740fb}{m\+\_\+vao}}
+\item 
+unsigned int \mbox{\hyperlink{class_mesh_a1a159dfbecf9d30c533bcdfc0d66f4d2}{m\+\_\+vbo}}
+\item 
+unsigned int \mbox{\hyperlink{class_mesh_a500e68b2b478fb3f5add69f73760b736}{m\+\_\+ibo}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mesh_a2af137f1571af89172b9c102302c416b}\label{class_mesh_a2af137f1571af89172b9c102302c416b}} 
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily Mesh\+::\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}\label{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}} 
+\index{Mesh@{Mesh}!````~Mesh@{$\sim$Mesh}}
+\index{````~Mesh@{$\sim$Mesh}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mesh()}{~Mesh()}}
+{\footnotesize\ttfamily Mesh\+::$\sim$\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mesh_a996a8668fa2ca7d95d6d10744c833bc8}\label{class_mesh_a996a8668fa2ca7d95d6d10744c833bc8}} 
+\index{Mesh@{Mesh}!draw@{draw}}
+\index{draw@{draw}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Mesh\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_mesh_ada6f83e10fa4e0ef7f8a53a110102584}\label{class_mesh_ada6f83e10fa4e0ef7f8a53a110102584}} 
+\index{Mesh@{Mesh}!initialize@{initialize}}
+\index{initialize@{initialize}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Mesh\+::initialize (\begin{DoxyParamCaption}\item[{unsigned int}]{vertex\+Count,  }\item[{const \mbox{\hyperlink{struct_mesh_1_1_vertex}{Vertex}} $\ast$}]{vertices,  }\item[{unsigned int}]{index\+Count = {\ttfamily 0},  }\item[{unsigned int $\ast$}]{indices = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mesh_a9d606e593a14cf9329eb53dc5e3b693f}\label{class_mesh_a9d606e593a14cf9329eb53dc5e3b693f}} 
+\index{Mesh@{Mesh}!intializeCube@{intializeCube}}
+\index{intializeCube@{intializeCube}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{intializeCube()}{intializeCube()}}
+{\footnotesize\ttfamily void Mesh\+::intialize\+Cube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mesh_a6b0ceb24e421450b3dcbdea8de97c146}\label{class_mesh_a6b0ceb24e421450b3dcbdea8de97c146}} 
+\index{Mesh@{Mesh}!intializeQuad@{intializeQuad}}
+\index{intializeQuad@{intializeQuad}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{intializeQuad()}{intializeQuad()}}
+{\footnotesize\ttfamily void Mesh\+::intialize\+Quad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mesh_a500e68b2b478fb3f5add69f73760b736}\label{class_mesh_a500e68b2b478fb3f5add69f73760b736}} 
+\index{Mesh@{Mesh}!m\_ibo@{m\_ibo}}
+\index{m\_ibo@{m\_ibo}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{m\_ibo}{m\_ibo}}
+{\footnotesize\ttfamily unsigned int Mesh\+::m\+\_\+ibo\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_mesh_ad117488e363107c75e1dcbe5d6e31dc1}\label{class_mesh_ad117488e363107c75e1dcbe5d6e31dc1}} 
+\index{Mesh@{Mesh}!m\_triCount@{m\_triCount}}
+\index{m\_triCount@{m\_triCount}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{m\_triCount}{m\_triCount}}
+{\footnotesize\ttfamily unsigned int Mesh\+::m\+\_\+tri\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_mesh_a8ebf07f32d4f2c5802954bbdbef740fb}\label{class_mesh_a8ebf07f32d4f2c5802954bbdbef740fb}} 
+\index{Mesh@{Mesh}!m\_vao@{m\_vao}}
+\index{m\_vao@{m\_vao}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{m\_vao}{m\_vao}}
+{\footnotesize\ttfamily unsigned int Mesh\+::m\+\_\+vao\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_mesh_a1a159dfbecf9d30c533bcdfc0d66f4d2}\label{class_mesh_a1a159dfbecf9d30c533bcdfc0d66f4d2}} 
+\index{Mesh@{Mesh}!m\_vbo@{m\_vbo}}
+\index{m\_vbo@{m\_vbo}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{m\_vbo}{m\_vbo}}
+{\footnotesize\ttfamily unsigned int Mesh\+::m\+\_\+vbo\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mesh_8h}{Mesh.\+h}}\item 
+\mbox{\hyperlink{_mesh_8cpp}{Mesh.\+cpp}}\end{DoxyCompactItemize}

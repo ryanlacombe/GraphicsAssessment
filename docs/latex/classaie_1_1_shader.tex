@@ -1,0 +1,115 @@
+\hypertarget{classaie_1_1_shader}{}\doxysection{aie\+::Shader Class Reference}
+\label{classaie_1_1_shader}\index{aie::Shader@{aie::Shader}}
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaie_1_1_shader_ae590f4144348a2745ab6bf557b1205fe}{Shader}} ()
+\item 
+\mbox{\hyperlink{classaie_1_1_shader_ae857dbd6dca61cb2c8d5747fb49c688a}{Shader}} (unsigned int stage, const char $\ast$filename)
+\item 
+\mbox{\hyperlink{classaie_1_1_shader_ad25163a986d2ebfa0042af51ad645e1a}{$\sim$\+Shader}} ()
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_ac8bccdbcf6820004dbde01214dacc10d}{load\+Shader}} (unsigned int stage, const char $\ast$filename)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_acf66271d21d42480a2d37b1ecdbc1a13}{create\+Shader}} (unsigned int stage, const char $\ast$string)
+\item 
+unsigned int \mbox{\hyperlink{classaie_1_1_shader_adced449c9d0399389ec6e7fe95d3a214}{get\+Stage}} () const
+\item 
+unsigned int \mbox{\hyperlink{classaie_1_1_shader_a727d5dc9c766947506a99781452c9b30}{get\+Handle}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classaie_1_1_shader_ac4dfb5d2b3e4f2971ad902b11cbb0139}{get\+Last\+Error}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classaie_1_1_shader_a65050530ba1016d10bb46b29311a6bb9}{m\+\_\+stage}}
+\item 
+unsigned int \mbox{\hyperlink{classaie_1_1_shader_a64fa89789fc628bc0b5ff0857ec6cc50}{m\+\_\+handle}}
+\item 
+char $\ast$ \mbox{\hyperlink{classaie_1_1_shader_a7a795b75412e37594590f80f99f351d1}{m\+\_\+last\+Error}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classaie_1_1_shader_ae590f4144348a2745ab6bf557b1205fe}\label{classaie_1_1_shader_ae590f4144348a2745ab6bf557b1205fe}} 
+\index{aie::Shader@{aie::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily aie\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_ae857dbd6dca61cb2c8d5747fb49c688a}\label{classaie_1_1_shader_ae857dbd6dca61cb2c8d5747fb49c688a}} 
+\index{aie::Shader@{aie::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily aie\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{unsigned int}]{stage,  }\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_ad25163a986d2ebfa0042af51ad645e1a}\label{classaie_1_1_shader_ad25163a986d2ebfa0042af51ad645e1a}} 
+\index{aie::Shader@{aie::Shader}!````~Shader@{$\sim$Shader}}
+\index{````~Shader@{$\sim$Shader}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{$\sim$Shader()}{~Shader()}}
+{\footnotesize\ttfamily aie\+::\+Shader\+::$\sim$\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classaie_1_1_shader_acf66271d21d42480a2d37b1ecdbc1a13}\label{classaie_1_1_shader_acf66271d21d42480a2d37b1ecdbc1a13}} 
+\index{aie::Shader@{aie::Shader}!createShader@{createShader}}
+\index{createShader@{createShader}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{createShader()}{createShader()}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+::create\+Shader (\begin{DoxyParamCaption}\item[{unsigned int}]{stage,  }\item[{const char $\ast$}]{string }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_a727d5dc9c766947506a99781452c9b30}\label{classaie_1_1_shader_a727d5dc9c766947506a99781452c9b30}} 
+\index{aie::Shader@{aie::Shader}!getHandle@{getHandle}}
+\index{getHandle@{getHandle}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{getHandle()}{getHandle()}}
+{\footnotesize\ttfamily unsigned int aie\+::\+Shader\+::get\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_ac4dfb5d2b3e4f2971ad902b11cbb0139}\label{classaie_1_1_shader_ac4dfb5d2b3e4f2971ad902b11cbb0139}} 
+\index{aie::Shader@{aie::Shader}!getLastError@{getLastError}}
+\index{getLastError@{getLastError}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{getLastError()}{getLastError()}}
+{\footnotesize\ttfamily const char$\ast$ aie\+::\+Shader\+::get\+Last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_adced449c9d0399389ec6e7fe95d3a214}\label{classaie_1_1_shader_adced449c9d0399389ec6e7fe95d3a214}} 
+\index{aie::Shader@{aie::Shader}!getStage@{getStage}}
+\index{getStage@{getStage}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{getStage()}{getStage()}}
+{\footnotesize\ttfamily unsigned int aie\+::\+Shader\+::get\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_ac8bccdbcf6820004dbde01214dacc10d}\label{classaie_1_1_shader_ac8bccdbcf6820004dbde01214dacc10d}} 
+\index{aie::Shader@{aie::Shader}!loadShader@{loadShader}}
+\index{loadShader@{loadShader}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{loadShader()}{loadShader()}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+::load\+Shader (\begin{DoxyParamCaption}\item[{unsigned int}]{stage,  }\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classaie_1_1_shader_a64fa89789fc628bc0b5ff0857ec6cc50}\label{classaie_1_1_shader_a64fa89789fc628bc0b5ff0857ec6cc50}} 
+\index{aie::Shader@{aie::Shader}!m\_handle@{m\_handle}}
+\index{m\_handle@{m\_handle}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{m\_handle}{m\_handle}}
+{\footnotesize\ttfamily unsigned int aie\+::\+Shader\+::m\+\_\+handle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_a7a795b75412e37594590f80f99f351d1}\label{classaie_1_1_shader_a7a795b75412e37594590f80f99f351d1}} 
+\index{aie::Shader@{aie::Shader}!m\_lastError@{m\_lastError}}
+\index{m\_lastError@{m\_lastError}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{m\_lastError}{m\_lastError}}
+{\footnotesize\ttfamily char$\ast$ aie\+::\+Shader\+::m\+\_\+last\+Error\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_a65050530ba1016d10bb46b29311a6bb9}\label{classaie_1_1_shader_a65050530ba1016d10bb46b29311a6bb9}} 
+\index{aie::Shader@{aie::Shader}!m\_stage@{m\_stage}}
+\index{m\_stage@{m\_stage}!aie::Shader@{aie::Shader}}
+\doxysubsubsection{\texorpdfstring{m\_stage}{m\_stage}}
+{\footnotesize\ttfamily unsigned int aie\+::\+Shader\+::m\+\_\+stage\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shader_8h}{Shader.\+h}}\item 
+\mbox{\hyperlink{_shader_8cpp}{Shader.\+cpp}}\end{DoxyCompactItemize}

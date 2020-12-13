@@ -1,0 +1,52 @@
+\hypertarget{namespacetinyobj}{}\doxysection{tinyobj Namespace Reference}
+\label{namespacetinyobj}\index{tinyobj@{tinyobj}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}}
+\item 
+class \mbox{\hyperlink{classtinyobj_1_1_material_file_reader}{Material\+File\+Reader}}
+\item 
+class \mbox{\hyperlink{classtinyobj_1_1_material_reader}{Material\+Reader}}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1mesh__t}{mesh\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1tag__t}{tag\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacetinyobj_a6eb2ef176025ae2256066b1756588482}{Load\+Obj}} (std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t}} $>$ \&shapes, std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}} $>$ \&materials, std\+::string \&err, const char $\ast$filename, const char $\ast$mtl\+\_\+basepath=N\+U\+LL, bool triangulate=true)
+\item 
+bool \mbox{\hyperlink{namespacetinyobj_a59276d8d7498c0fe8dd56e6b5a6ed018}{Load\+Obj}} (std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t}} $>$ \&shapes, std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}} $>$ \&materials, std\+::string \&err, std\+::istream \&in\+Stream, \mbox{\hyperlink{classtinyobj_1_1_material_reader}{Material\+Reader}} \&read\+Mat\+Fn, bool triangulate=true)
+\item 
+void \mbox{\hyperlink{namespacetinyobj_acc99e03ea55b50422c830b58f3bee69d}{Load\+Mtl}} (std\+::map$<$ std\+::string, int $>$ \&material\+\_\+map, std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}} $>$ \&materials, std\+::istream \&in\+Stream)
+\begin{DoxyCompactList}\small\item\em Loads materials into std\+::map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetinyobj_acc99e03ea55b50422c830b58f3bee69d}\label{namespacetinyobj_acc99e03ea55b50422c830b58f3bee69d}} 
+\index{tinyobj@{tinyobj}!LoadMtl@{LoadMtl}}
+\index{LoadMtl@{LoadMtl}!tinyobj@{tinyobj}}
+\doxysubsubsection{\texorpdfstring{LoadMtl()}{LoadMtl()}}
+{\footnotesize\ttfamily void tinyobj\+::\+Load\+Mtl (\begin{DoxyParamCaption}\item[{std\+::map$<$ std\+::string, int $>$ \&}]{material\+\_\+map,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}} $>$ \&}]{materials,  }\item[{std\+::istream \&}]{in\+Stream }\end{DoxyParamCaption})}
+
+
+
+Loads materials into std\+::map. 
+
+\mbox{\Hypertarget{namespacetinyobj_a6eb2ef176025ae2256066b1756588482}\label{namespacetinyobj_a6eb2ef176025ae2256066b1756588482}} 
+\index{tinyobj@{tinyobj}!LoadObj@{LoadObj}}
+\index{LoadObj@{LoadObj}!tinyobj@{tinyobj}}
+\doxysubsubsection{\texorpdfstring{LoadObj()}{LoadObj()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool tinyobj\+::\+Load\+Obj (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t}} $>$ \&}]{shapes,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}} $>$ \&}]{materials,  }\item[{std\+::string \&}]{err,  }\item[{const char $\ast$}]{filename,  }\item[{const char $\ast$}]{mtl\+\_\+basepath = {\ttfamily NULL},  }\item[{bool}]{triangulate = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Loads .obj from a file. \textquotesingle{}shapes\textquotesingle{} will be filled with parsed shape data The function returns error string. Returns true when loading .obj become success. Returns warning and error message into {\ttfamily err} \textquotesingle{}mtl\+\_\+basepath\textquotesingle{} is optional, and used for base path for .mtl file. \textquotesingle{}triangulate\textquotesingle{} is optional, and used whether triangulate polygon face in .obj or not. \mbox{\Hypertarget{namespacetinyobj_a59276d8d7498c0fe8dd56e6b5a6ed018}\label{namespacetinyobj_a59276d8d7498c0fe8dd56e6b5a6ed018}} 
+\index{tinyobj@{tinyobj}!LoadObj@{LoadObj}}
+\index{LoadObj@{LoadObj}!tinyobj@{tinyobj}}
+\doxysubsubsection{\texorpdfstring{LoadObj()}{LoadObj()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool tinyobj\+::\+Load\+Obj (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1shape__t}{shape\+\_\+t}} $>$ \&}]{shapes,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structtinyobj_1_1material__t}{material\+\_\+t}} $>$ \&}]{materials,  }\item[{std\+::string \&}]{err,  }\item[{std\+::istream \&}]{in\+Stream,  }\item[{\mbox{\hyperlink{classtinyobj_1_1_material_reader}{Material\+Reader}} \&}]{read\+Mat\+Fn,  }\item[{bool}]{triangulate = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Loads object from a std\+::istream, uses Get\+Mtl\+I\+Stream\+Fn to retrieve std\+::istream for materials. Returns true when loading .obj become success. Returns warning and error message into {\ttfamily err} 

@@ -1,0 +1,357 @@
+\hypertarget{classaie_1_1_shader_program}{}\doxysection{aie\+::Shader\+Program Class Reference}
+\label{classaie_1_1_shader_program}\index{aie::ShaderProgram@{aie::ShaderProgram}}
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classaie_1_1_shader_program_aa5bf135d39348ba5bf10ac09f3960655}{Shader\+Program}} ()
+\item 
+\mbox{\hyperlink{classaie_1_1_shader_program_ac9085b5c3091345d85edc6c9e4b667d4}{$\sim$\+Shader\+Program}} ()
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_aa2500244b7c509031bc9e2a56e933f17}{load\+Shader}} (unsigned int stage, const char $\ast$filename)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_ae9b1bfa121a0f2d65c6128c757e6784c}{create\+Shader}} (unsigned int stage, const char $\ast$string)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a8f2037244a97fcbc7ce6736050c1aaeb}{attach\+Shader}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classaie_1_1_shader}{Shader}} $>$ \&shader)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a6974f1c5841139dae018a24627ae4bc5}{link}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{classaie_1_1_shader_program_a6a2ee1b5b1fe47861b4c1f895fac75db}{get\+Last\+Error}} () const
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a64fb5f41691dde36158a4c6d28af97f0}{bind}} ()
+\item 
+unsigned int \mbox{\hyperlink{classaie_1_1_shader_program_affd78fb71308ed8b341c1b195ee19564}{get\+Handle}} () const
+\item 
+int \mbox{\hyperlink{classaie_1_1_shader_program_a5253a335baea6cafeed0907603dda5f0}{get\+Uniform}} (const char $\ast$name)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a1a352b9ecfc7e13dc98e365b0c9dd905}{bind\+Uniform}} (int ID, int value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a0e4a8aa510a8195e5759f91301fdb251}{bind\+Uniform}} (int ID, float value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a63ffa31835c3354cc19e6dd42f131bc6}{bind\+Uniform}} (int ID, const glm\+::vec2 \&value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a70bde5c4372504792b8eae0a13d7e531}{bind\+Uniform}} (int ID, const glm\+::vec3 \&value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a6015c7d124316134c81adaa41d60982b}{bind\+Uniform}} (int ID, const glm\+::vec4 \&value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_abbde3ed3ca18bbdb547a9e749765c165}{bind\+Uniform}} (int ID, const glm\+::mat2 \&value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_af86fd5bc3068f4dd6d626d82b6557464}{bind\+Uniform}} (int ID, const glm\+::mat3 \&value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_ae63a75898f8b8734ba5a0b576563b7a2}{bind\+Uniform}} (int ID, const glm\+::mat4 \&value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a5ba96bc7468bc1eca9686c4e1ab7dd44}{bind\+Uniform}} (int ID, int count, int $\ast$value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_ad70f5dbbd81a221dd4dcd3bb1d9fa21e}{bind\+Uniform}} (int ID, int count, float $\ast$value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a826d2a2709b8fc360140cedc92325934}{bind\+Uniform}} (int ID, int count, const glm\+::vec2 $\ast$value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_ace29e5cc736d54de5a83c8d497da896c}{bind\+Uniform}} (int ID, int count, const glm\+::vec3 $\ast$value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_aadfeea5559be04625e6ddaa604b95359}{bind\+Uniform}} (int ID, int count, const glm\+::vec4 $\ast$value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a86b4f46c6acd3255f167a189c8a5567a}{bind\+Uniform}} (int ID, int count, const glm\+::mat2 $\ast$value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a856da7cc8213f7b0f99af4153d2969c0}{bind\+Uniform}} (int ID, int count, const glm\+::mat3 $\ast$value)
+\item 
+void \mbox{\hyperlink{classaie_1_1_shader_program_a08dea7679f5c9d50dcab2d0335d01003}{bind\+Uniform}} (int ID, int count, const glm\+::mat4 $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_acf5d7f3ef0922a46245085aedfdd512a}{bind\+Uniform}} (const char $\ast$name, int value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a601a0b64d9779620dc4ee67d4bbac2be}{bind\+Uniform}} (const char $\ast$name, float value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a9b51984e5bcabcd04be95ffb5b1f0c07}{bind\+Uniform}} (const char $\ast$name, const glm\+::vec2 \&value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_af3680decb0150cf486119c7cf094becf}{bind\+Uniform}} (const char $\ast$name, const glm\+::vec3 \&value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a2b7c87299dad9a8f2934448ada17928d}{bind\+Uniform}} (const char $\ast$name, const glm\+::vec4 \&value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a2332b47d947c4fc2989d6219e2b30a82}{bind\+Uniform}} (const char $\ast$name, const glm\+::mat2 \&value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a9cf2b371bb276722347b7673ebc02fe4}{bind\+Uniform}} (const char $\ast$name, const glm\+::mat3 \&value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a3e9c907af050c93e684a26bbb7a1b4af}{bind\+Uniform}} (const char $\ast$name, const glm\+::mat4 \&value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a6a118109a3288179f594545a902c2b9f}{bind\+Uniform}} (const char $\ast$name, int count, int $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_aa68f73912bffc680a4a8c8a1d8130095}{bind\+Uniform}} (const char $\ast$name, int count, float $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a032874af90712755c2035f035a750024}{bind\+Uniform}} (const char $\ast$name, int count, const glm\+::vec2 $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_aee4664900fff70ef2ea37c5cb7d217a9}{bind\+Uniform}} (const char $\ast$name, int count, const glm\+::vec3 $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a7cb8309886f32e98f6b2930481893729}{bind\+Uniform}} (const char $\ast$name, int count, const glm\+::vec4 $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a2689674f627bca9d7ee0b99e2af3bb96}{bind\+Uniform}} (const char $\ast$name, int count, const glm\+::mat2 $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_ad21a85871aeaebe2f49c438b8c1bdb4c}{bind\+Uniform}} (const char $\ast$name, int count, const glm\+::mat3 $\ast$value)
+\item 
+bool \mbox{\hyperlink{classaie_1_1_shader_program_a390caebb9eb7790f10e573876bf30610}{bind\+Uniform}} (const char $\ast$name, int count, const glm\+::mat4 $\ast$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classaie_1_1_shader_program_aa5bf135d39348ba5bf10ac09f3960655}\label{classaie_1_1_shader_program_aa5bf135d39348ba5bf10ac09f3960655}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!ShaderProgram@{ShaderProgram}}
+\index{ShaderProgram@{ShaderProgram}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{ShaderProgram()}{ShaderProgram()}}
+{\footnotesize\ttfamily aie\+::\+Shader\+Program\+::\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_ac9085b5c3091345d85edc6c9e4b667d4}\label{classaie_1_1_shader_program_ac9085b5c3091345d85edc6c9e4b667d4}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!````~ShaderProgram@{$\sim$ShaderProgram}}
+\index{````~ShaderProgram@{$\sim$ShaderProgram}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{$\sim$ShaderProgram()}{~ShaderProgram()}}
+{\footnotesize\ttfamily aie\+::\+Shader\+Program\+::$\sim$\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classaie_1_1_shader_program_a8f2037244a97fcbc7ce6736050c1aaeb}\label{classaie_1_1_shader_program_a8f2037244a97fcbc7ce6736050c1aaeb}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!attachShader@{attachShader}}
+\index{attachShader@{attachShader}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{attachShader()}{attachShader()}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::attach\+Shader (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classaie_1_1_shader}{Shader}} $>$ \&}]{shader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a64fb5f41691dde36158a4c6d28af97f0}\label{classaie_1_1_shader_program_a64fb5f41691dde36158a4c6d28af97f0}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bind@{bind}}
+\index{bind@{bind}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a2332b47d947c4fc2989d6219e2b30a82}\label{classaie_1_1_shader_program_a2332b47d947c4fc2989d6219e2b30a82}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::mat2 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a9cf2b371bb276722347b7673ebc02fe4}\label{classaie_1_1_shader_program_a9cf2b371bb276722347b7673ebc02fe4}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::mat3 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a3e9c907af050c93e684a26bbb7a1b4af}\label{classaie_1_1_shader_program_a3e9c907af050c93e684a26bbb7a1b4af}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::mat4 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a9b51984e5bcabcd04be95ffb5b1f0c07}\label{classaie_1_1_shader_program_a9b51984e5bcabcd04be95ffb5b1f0c07}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_af3680decb0150cf486119c7cf094becf}\label{classaie_1_1_shader_program_af3680decb0150cf486119c7cf094becf}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a2b7c87299dad9a8f2934448ada17928d}\label{classaie_1_1_shader_program_a2b7c87299dad9a8f2934448ada17928d}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [6/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a601a0b64d9779620dc4ee67d4bbac2be}\label{classaie_1_1_shader_program_a601a0b64d9779620dc4ee67d4bbac2be}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [7/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a2689674f627bca9d7ee0b99e2af3bb96}\label{classaie_1_1_shader_program_a2689674f627bca9d7ee0b99e2af3bb96}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [8/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{const glm\+::mat2 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_ad21a85871aeaebe2f49c438b8c1bdb4c}\label{classaie_1_1_shader_program_ad21a85871aeaebe2f49c438b8c1bdb4c}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [9/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{const glm\+::mat3 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a390caebb9eb7790f10e573876bf30610}\label{classaie_1_1_shader_program_a390caebb9eb7790f10e573876bf30610}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [10/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{const glm\+::mat4 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a032874af90712755c2035f035a750024}\label{classaie_1_1_shader_program_a032874af90712755c2035f035a750024}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [11/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{const glm\+::vec2 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_aee4664900fff70ef2ea37c5cb7d217a9}\label{classaie_1_1_shader_program_aee4664900fff70ef2ea37c5cb7d217a9}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [12/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{const glm\+::vec3 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a7cb8309886f32e98f6b2930481893729}\label{classaie_1_1_shader_program_a7cb8309886f32e98f6b2930481893729}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [13/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{const glm\+::vec4 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_aa68f73912bffc680a4a8c8a1d8130095}\label{classaie_1_1_shader_program_aa68f73912bffc680a4a8c8a1d8130095}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [14/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{float $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a6a118109a3288179f594545a902c2b9f}\label{classaie_1_1_shader_program_a6a118109a3288179f594545a902c2b9f}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [15/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{count,  }\item[{int $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_acf5d7f3ef0922a46245085aedfdd512a}\label{classaie_1_1_shader_program_acf5d7f3ef0922a46245085aedfdd512a}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [16/32]}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_abbde3ed3ca18bbdb547a9e749765c165}\label{classaie_1_1_shader_program_abbde3ed3ca18bbdb547a9e749765c165}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [17/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const glm\+::mat2 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_af86fd5bc3068f4dd6d626d82b6557464}\label{classaie_1_1_shader_program_af86fd5bc3068f4dd6d626d82b6557464}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [18/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const glm\+::mat3 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_ae63a75898f8b8734ba5a0b576563b7a2}\label{classaie_1_1_shader_program_ae63a75898f8b8734ba5a0b576563b7a2}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [19/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const glm\+::mat4 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a63ffa31835c3354cc19e6dd42f131bc6}\label{classaie_1_1_shader_program_a63ffa31835c3354cc19e6dd42f131bc6}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [20/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a70bde5c4372504792b8eae0a13d7e531}\label{classaie_1_1_shader_program_a70bde5c4372504792b8eae0a13d7e531}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [21/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a6015c7d124316134c81adaa41d60982b}\label{classaie_1_1_shader_program_a6015c7d124316134c81adaa41d60982b}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [22/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a0e4a8aa510a8195e5759f91301fdb251}\label{classaie_1_1_shader_program_a0e4a8aa510a8195e5759f91301fdb251}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [23/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a86b4f46c6acd3255f167a189c8a5567a}\label{classaie_1_1_shader_program_a86b4f46c6acd3255f167a189c8a5567a}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [24/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{const glm\+::mat2 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a856da7cc8213f7b0f99af4153d2969c0}\label{classaie_1_1_shader_program_a856da7cc8213f7b0f99af4153d2969c0}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [25/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{const glm\+::mat3 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a08dea7679f5c9d50dcab2d0335d01003}\label{classaie_1_1_shader_program_a08dea7679f5c9d50dcab2d0335d01003}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [26/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{const glm\+::mat4 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a826d2a2709b8fc360140cedc92325934}\label{classaie_1_1_shader_program_a826d2a2709b8fc360140cedc92325934}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [27/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{const glm\+::vec2 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_ace29e5cc736d54de5a83c8d497da896c}\label{classaie_1_1_shader_program_ace29e5cc736d54de5a83c8d497da896c}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [28/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{const glm\+::vec3 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_aadfeea5559be04625e6ddaa604b95359}\label{classaie_1_1_shader_program_aadfeea5559be04625e6ddaa604b95359}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [29/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{const glm\+::vec4 $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_ad70f5dbbd81a221dd4dcd3bb1d9fa21e}\label{classaie_1_1_shader_program_ad70f5dbbd81a221dd4dcd3bb1d9fa21e}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [30/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{float $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a5ba96bc7468bc1eca9686c4e1ab7dd44}\label{classaie_1_1_shader_program_a5ba96bc7468bc1eca9686c4e1ab7dd44}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [31/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{count,  }\item[{int $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a1a352b9ecfc7e13dc98e365b0c9dd905}\label{classaie_1_1_shader_program_a1a352b9ecfc7e13dc98e365b0c9dd905}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!bindUniform@{bindUniform}}
+\index{bindUniform@{bindUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{bindUniform()}{bindUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [32/32]}}
+{\footnotesize\ttfamily void aie\+::\+Shader\+Program\+::bind\+Uniform (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_ae9b1bfa121a0f2d65c6128c757e6784c}\label{classaie_1_1_shader_program_ae9b1bfa121a0f2d65c6128c757e6784c}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!createShader@{createShader}}
+\index{createShader@{createShader}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{createShader()}{createShader()}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::create\+Shader (\begin{DoxyParamCaption}\item[{unsigned int}]{stage,  }\item[{const char $\ast$}]{string }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_affd78fb71308ed8b341c1b195ee19564}\label{classaie_1_1_shader_program_affd78fb71308ed8b341c1b195ee19564}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!getHandle@{getHandle}}
+\index{getHandle@{getHandle}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getHandle()}{getHandle()}}
+{\footnotesize\ttfamily unsigned int aie\+::\+Shader\+Program\+::get\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a6a2ee1b5b1fe47861b4c1f895fac75db}\label{classaie_1_1_shader_program_a6a2ee1b5b1fe47861b4c1f895fac75db}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!getLastError@{getLastError}}
+\index{getLastError@{getLastError}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getLastError()}{getLastError()}}
+{\footnotesize\ttfamily const char$\ast$ aie\+::\+Shader\+Program\+::get\+Last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a5253a335baea6cafeed0907603dda5f0}\label{classaie_1_1_shader_program_a5253a335baea6cafeed0907603dda5f0}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!getUniform@{getUniform}}
+\index{getUniform@{getUniform}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getUniform()}{getUniform()}}
+{\footnotesize\ttfamily int aie\+::\+Shader\+Program\+::get\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_a6974f1c5841139dae018a24627ae4bc5}\label{classaie_1_1_shader_program_a6974f1c5841139dae018a24627ae4bc5}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!link@{link}}
+\index{link@{link}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classaie_1_1_shader_program_aa2500244b7c509031bc9e2a56e933f17}\label{classaie_1_1_shader_program_aa2500244b7c509031bc9e2a56e933f17}} 
+\index{aie::ShaderProgram@{aie::ShaderProgram}!loadShader@{loadShader}}
+\index{loadShader@{loadShader}!aie::ShaderProgram@{aie::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{loadShader()}{loadShader()}}
+{\footnotesize\ttfamily bool aie\+::\+Shader\+Program\+::load\+Shader (\begin{DoxyParamCaption}\item[{unsigned int}]{stage,  }\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shader_8h}{Shader.\+h}}\item 
+\mbox{\hyperlink{_shader_8cpp}{Shader.\+cpp}}\end{DoxyCompactItemize}

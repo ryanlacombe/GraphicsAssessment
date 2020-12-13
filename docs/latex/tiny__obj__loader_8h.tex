@@ -1,0 +1,43 @@
+\hypertarget{tiny__obj__loader_8h}{}\doxysection{tiny\+\_\+obj\+\_\+loader.\+h File Reference}
+\label{tiny__obj__loader_8h}\index{tiny\_obj\_loader.h@{tiny\_obj\_loader.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}tiny\+\_\+obj\+\_\+loader.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1material__t}{tinyobj\+::material\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1tag__t}{tinyobj\+::tag\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1mesh__t}{tinyobj\+::mesh\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structtinyobj_1_1shape__t}{tinyobj\+::shape\+\_\+t}}
+\item 
+class \mbox{\hyperlink{classtinyobj_1_1_material_reader}{tinyobj\+::\+Material\+Reader}}
+\item 
+class \mbox{\hyperlink{classtinyobj_1_1_material_file_reader}{tinyobj\+::\+Material\+File\+Reader}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacetinyobj}{tinyobj}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacetinyobj_a6eb2ef176025ae2256066b1756588482}{tinyobj\+::\+Load\+Obj}} (std\+::vector$<$ shape\+\_\+t $>$ \&shapes, std\+::vector$<$ material\+\_\+t $>$ \&materials, std\+::string \&err, const char $\ast$filename, const char $\ast$mtl\+\_\+basepath=N\+U\+LL, bool triangulate=true)
+\item 
+bool \mbox{\hyperlink{namespacetinyobj_a59276d8d7498c0fe8dd56e6b5a6ed018}{tinyobj\+::\+Load\+Obj}} (std\+::vector$<$ shape\+\_\+t $>$ \&shapes, std\+::vector$<$ material\+\_\+t $>$ \&materials, std\+::string \&err, std\+::istream \&in\+Stream, Material\+Reader \&read\+Mat\+Fn, bool triangulate=true)
+\item 
+void \mbox{\hyperlink{namespacetinyobj_acc99e03ea55b50422c830b58f3bee69d}{tinyobj\+::\+Load\+Mtl}} (std\+::map$<$ std\+::string, int $>$ \&material\+\_\+map, std\+::vector$<$ material\+\_\+t $>$ \&materials, std\+::istream \&in\+Stream)
+\begin{DoxyCompactList}\small\item\em Loads materials into std\+::map. \end{DoxyCompactList}\end{DoxyCompactItemize}

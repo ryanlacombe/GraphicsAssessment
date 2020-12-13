@@ -1,0 +1,211 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+\mbox{\hyperlink{class_game_aaa0243fd828c621a987e71fc0979f94d}{Game}} (int width, int height, const char $\ast$title)
+\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\item 
+int \mbox{\hyperlink{class_game_a99fb161fbbe87d25a8b73265a0611e58}{run}} ()
+\item 
+bool \mbox{\hyperlink{class_game_a3142e6fdebebb49ffbadd11ee1ace4e3}{start}} ()
+\item 
+bool \mbox{\hyperlink{class_game_a97c66319e0eaa5671d5902baf8039f1d}{update}} (double delta\+Time)
+\item 
+bool \mbox{\hyperlink{class_game_ac9bd312b48dd1d93c4843f6890cdd032}{draw}} ()
+\item 
+bool \mbox{\hyperlink{class_game_a24ae9d6deeae9921a286718618634e57}{end}} ()
+\item 
+G\+L\+F\+Wwindow $\ast$ \mbox{\hyperlink{class_game_abc671c8b67ea5228ee125c4165c15970}{get\+Window}} ()
+\item 
+int \mbox{\hyperlink{class_game_a009fd047c0faeeeb5c57e4d5e93208ac}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_game_ab6d48e5ef16d80cb52e220fc2860e62a}{get\+Height}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{class_game_a9727a23c0b5fbb3c08c3e4ec2244061b}{get\+Title}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+L\+F\+Wwindow $\ast$ \mbox{\hyperlink{class_game_a09666febaa311ea495ffa31a5de7c37b}{m\+\_\+window}}
+\item 
+\mbox{\hyperlink{class_camera}{Camera}} $\ast$ \mbox{\hyperlink{class_game_ac33ae602d5dd301383df69847811a268}{m\+\_\+camera}}
+\item 
+\mbox{\hyperlink{classaie_1_1_shader_program}{aie\+::\+Shader\+Program}} \mbox{\hyperlink{class_game_a066f54e1d5fb15b9eb517d573dccdda8}{m\+\_\+shader}}
+\item 
+\mbox{\hyperlink{class_light}{Light}} \mbox{\hyperlink{class_game_a3a171ea93495a5fff4ffe4874bd45cb3}{m\+\_\+light1}}
+\item 
+\mbox{\hyperlink{class_light}{Light}} \mbox{\hyperlink{class_game_a0605eaaefe712b029729f0b72a98bcbb}{m\+\_\+light2}}
+\item 
+\mbox{\hyperlink{classaie_1_1_o_b_j_mesh}{aie\+::\+O\+B\+J\+Mesh}} \mbox{\hyperlink{class_game_ad16be13857813f568d711eee9ade7811}{m\+\_\+obj\+Mesh}}
+\item 
+aie\+::\+Texture \mbox{\hyperlink{class_game_a0b976d08af453eb36b9c57f77411d62a}{m\+\_\+obj\+Texture}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{class_game_af2e666d8932a7a9cf8cd19787f4559e5}{m\+\_\+mesh\+Transform}}
+\item 
+\mbox{\hyperlink{class_box}{Box}} $\ast$ \mbox{\hyperlink{class_game_a6ffe5f55052af7d90b1044e7d6f7bd8e}{m\+\_\+box}}
+\item 
+\mbox{\hyperlink{class_mesh}{Mesh}} \mbox{\hyperlink{class_game_af8be05dcda64d84bbfdd6ae8b7a9b7f0}{m\+\_\+mesh}}
+\item 
+aie\+::\+Texture \mbox{\hyperlink{class_game_ab17382e8dc0cf78384777af95ec717be}{m\+\_\+texture}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_aaa0243fd828c621a987e71fc0979f94d}\label{class_game_aaa0243fd828c621a987e71fc0979f94d}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const char $\ast$}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_ac9bd312b48dd1d93c4843f6890cdd032}\label{class_game_ac9bd312b48dd1d93c4843f6890cdd032}} 
+\index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily bool Game\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_a24ae9d6deeae9921a286718618634e57}\label{class_game_a24ae9d6deeae9921a286718618634e57}} 
+\index{Game@{Game}!end@{end}}
+\index{end@{end}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily bool Game\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_ab6d48e5ef16d80cb52e220fc2860e62a}\label{class_game_ab6d48e5ef16d80cb52e220fc2860e62a}} 
+\index{Game@{Game}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int Game\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_a9727a23c0b5fbb3c08c3e4ec2244061b}\label{class_game_a9727a23c0b5fbb3c08c3e4ec2244061b}} 
+\index{Game@{Game}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily const char$\ast$ Game\+::get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_a009fd047c0faeeeb5c57e4d5e93208ac}\label{class_game_a009fd047c0faeeeb5c57e4d5e93208ac}} 
+\index{Game@{Game}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int Game\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_abc671c8b67ea5228ee125c4165c15970}\label{class_game_abc671c8b67ea5228ee125c4165c15970}} 
+\index{Game@{Game}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ Game\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_a99fb161fbbe87d25a8b73265a0611e58}\label{class_game_a99fb161fbbe87d25a8b73265a0611e58}} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_a3142e6fdebebb49ffbadd11ee1ace4e3}\label{class_game_a3142e6fdebebb49ffbadd11ee1ace4e3}} 
+\index{Game@{Game}!start@{start}}
+\index{start@{start}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily bool Game\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_a97c66319e0eaa5671d5902baf8039f1d}\label{class_game_a97c66319e0eaa5671d5902baf8039f1d}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Game\+::update (\begin{DoxyParamCaption}\item[{double}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a6ffe5f55052af7d90b1044e7d6f7bd8e}\label{class_game_a6ffe5f55052af7d90b1044e7d6f7bd8e}} 
+\index{Game@{Game}!m\_box@{m\_box}}
+\index{m\_box@{m\_box}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_box}{m\_box}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_box}{Box}}$\ast$ Game\+::m\+\_\+box\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_ac33ae602d5dd301383df69847811a268}\label{class_game_ac33ae602d5dd301383df69847811a268}} 
+\index{Game@{Game}!m\_camera@{m\_camera}}
+\index{m\_camera@{m\_camera}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_camera}{m\_camera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera}{Camera}}$\ast$ Game\+::m\+\_\+camera\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_a3a171ea93495a5fff4ffe4874bd45cb3}\label{class_game_a3a171ea93495a5fff4ffe4874bd45cb3}} 
+\index{Game@{Game}!m\_light1@{m\_light1}}
+\index{m\_light1@{m\_light1}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_light1}{m\_light1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_light}{Light}} Game\+::m\+\_\+light1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_a0605eaaefe712b029729f0b72a98bcbb}\label{class_game_a0605eaaefe712b029729f0b72a98bcbb}} 
+\index{Game@{Game}!m\_light2@{m\_light2}}
+\index{m\_light2@{m\_light2}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_light2}{m\_light2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_light}{Light}} Game\+::m\+\_\+light2\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_af8be05dcda64d84bbfdd6ae8b7a9b7f0}\label{class_game_af8be05dcda64d84bbfdd6ae8b7a9b7f0}} 
+\index{Game@{Game}!m\_mesh@{m\_mesh}}
+\index{m\_mesh@{m\_mesh}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_mesh}{m\_mesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mesh}{Mesh}} Game\+::m\+\_\+mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_af2e666d8932a7a9cf8cd19787f4559e5}\label{class_game_af2e666d8932a7a9cf8cd19787f4559e5}} 
+\index{Game@{Game}!m\_meshTransform@{m\_meshTransform}}
+\index{m\_meshTransform@{m\_meshTransform}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_meshTransform}{m\_meshTransform}}
+{\footnotesize\ttfamily glm\+::mat4 Game\+::m\+\_\+mesh\+Transform\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_ad16be13857813f568d711eee9ade7811}\label{class_game_ad16be13857813f568d711eee9ade7811}} 
+\index{Game@{Game}!m\_objMesh@{m\_objMesh}}
+\index{m\_objMesh@{m\_objMesh}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_objMesh}{m\_objMesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classaie_1_1_o_b_j_mesh}{aie\+::\+O\+B\+J\+Mesh}} Game\+::m\+\_\+obj\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_a0b976d08af453eb36b9c57f77411d62a}\label{class_game_a0b976d08af453eb36b9c57f77411d62a}} 
+\index{Game@{Game}!m\_objTexture@{m\_objTexture}}
+\index{m\_objTexture@{m\_objTexture}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_objTexture}{m\_objTexture}}
+{\footnotesize\ttfamily aie\+::\+Texture Game\+::m\+\_\+obj\+Texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_a066f54e1d5fb15b9eb517d573dccdda8}\label{class_game_a066f54e1d5fb15b9eb517d573dccdda8}} 
+\index{Game@{Game}!m\_shader@{m\_shader}}
+\index{m\_shader@{m\_shader}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_shader}{m\_shader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classaie_1_1_shader_program}{aie\+::\+Shader\+Program}} Game\+::m\+\_\+shader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_ab17382e8dc0cf78384777af95ec717be}\label{class_game_ab17382e8dc0cf78384777af95ec717be}} 
+\index{Game@{Game}!m\_texture@{m\_texture}}
+\index{m\_texture@{m\_texture}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_texture}{m\_texture}}
+{\footnotesize\ttfamily aie\+::\+Texture Game\+::m\+\_\+texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_a09666febaa311ea495ffa31a5de7c37b}\label{class_game_a09666febaa311ea495ffa31a5de7c37b}} 
+\index{Game@{Game}!m\_window@{m\_window}}
+\index{m\_window@{m\_window}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{m\_window}{m\_window}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ Game\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

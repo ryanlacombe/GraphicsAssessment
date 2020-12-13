@@ -1,0 +1,213 @@
+\hypertarget{class_actor}{}\doxysection{Actor Class Reference}
+\label{class_actor}\index{Actor@{Actor}}
+
+
+{\ttfamily \#include $<$Actor.\+h$>$}
+
+Inheritance diagram for Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_actor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_actor_a2a0ff4335a1ee9096df90f288c026c8b}{Actor}} ()
+\item 
+\mbox{\hyperlink{class_actor_a73b5ba19ee347dbadd00f4b0d64194f3}{Actor}} (glm\+::vec3 position, glm\+::quat rotation, glm\+::vec3 scale)
+\item 
+\mbox{\hyperlink{class_actor_ad807fe8f85e72ab263a0c05e3231cb39}{$\sim$\+Actor}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_actor_ae3e0e0d1c3c26eb196707dd9b0fe3a56}{start}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_actor_a1393f0af41b34f014e6a515d4827a167}{update}} (double delta\+Time)
+\item 
+virtual bool \mbox{\hyperlink{class_actor_a93d5861c265f1d9cecee375377231ca0}{draw}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_actor_ab86d18c1e3cfacd9036cb05f7c2a7ce0}{end}} ()
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_actor_a5113b814194b5ba37d73498dd4e90fe2}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_actor_a01133270ca4c5b296ea14fb0be687259}{set\+Position}} (glm\+::vec3 position)
+\item 
+glm\+::quat \mbox{\hyperlink{class_actor_a0f073d2c10e8723d12962d7a79f8344c}{get\+Rotation}} ()
+\item 
+void \mbox{\hyperlink{class_actor_aa36717db00c845343cd4cb331d155cf4}{set\+Rotation}} (glm\+::quat rotation)
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_actor_a16172bbbf6bcf1aefddf88ad5fdd6173}{get\+Scale}} ()
+\item 
+void \mbox{\hyperlink{class_actor_abd05505bd3d4ccf83d90fc70c42394c3}{set\+Scale}} (glm\+::vec3 scale)
+\item 
+glm\+::mat4 \mbox{\hyperlink{class_actor_a3c623f756d6c51ac464630b26fcfc440}{get\+Transform}} ()
+\item 
+\mbox{\hyperlink{class_actor}{Actor}} $\ast$ \mbox{\hyperlink{class_actor_a8900fdfea6d5d21a4a0234fa13ddfc2a}{get\+Parent}} ()
+\item 
+void \mbox{\hyperlink{class_actor_a150c496960a2fcf1d34e54f8c0d16a4e}{set\+Parent}} (\mbox{\hyperlink{class_actor}{Actor}} $\ast$parent)
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_actor_a63e240eb170fea63ad84545f81b59db5}{get\+Parent\+Position}} ()
+\item 
+glm\+::quat \mbox{\hyperlink{class_actor_a3e31a95a0ff0f349cf4ec851acbe1226}{get\+Parent\+Rotation}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_actor_a49de271f454ef5e9d166e1f298d54800}{m\+\_\+position}} \{ 0.\+0f, 0.\+0f, 0.\+0f \}
+\item 
+glm\+::quat \mbox{\hyperlink{class_actor_a1da82e35d5aebff7514d8e1ed42a7201}{m\+\_\+rotation}} \{ 1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f \}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_actor_a0d0f572e4852e4922c1382d5d2c79f99}{m\+\_\+scale}} \{ 1.\+0f, 1.\+0f, 1.\+0f \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_actor_a2a0ff4335a1ee9096df90f288c026c8b}\label{class_actor_a2a0ff4335a1ee9096df90f288c026c8b}} 
+\index{Actor@{Actor}!Actor@{Actor}}
+\index{Actor@{Actor}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Actor()}{Actor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Actor\+::\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_a73b5ba19ee347dbadd00f4b0d64194f3}\label{class_actor_a73b5ba19ee347dbadd00f4b0d64194f3}} 
+\index{Actor@{Actor}!Actor@{Actor}}
+\index{Actor@{Actor}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{Actor()}{Actor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Actor\+::\+Actor (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position,  }\item[{glm\+::quat}]{rotation,  }\item[{glm\+::vec3}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_ad807fe8f85e72ab263a0c05e3231cb39}\label{class_actor_ad807fe8f85e72ab263a0c05e3231cb39}} 
+\index{Actor@{Actor}!````~Actor@{$\sim$Actor}}
+\index{````~Actor@{$\sim$Actor}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Actor()}{~Actor()}}
+{\footnotesize\ttfamily Actor\+::$\sim$\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_actor_a93d5861c265f1d9cecee375377231ca0}\label{class_actor_a93d5861c265f1d9cecee375377231ca0}} 
+\index{Actor@{Actor}!draw@{draw}}
+\index{draw@{draw}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual bool Actor\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_box_a969b519913ce3a25ff58da3895245519}{Box}}.
+
+\mbox{\Hypertarget{class_actor_ab86d18c1e3cfacd9036cb05f7c2a7ce0}\label{class_actor_ab86d18c1e3cfacd9036cb05f7c2a7ce0}} 
+\index{Actor@{Actor}!end@{end}}
+\index{end@{end}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily virtual bool Actor\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_actor_a8900fdfea6d5d21a4a0234fa13ddfc2a}\label{class_actor_a8900fdfea6d5d21a4a0234fa13ddfc2a}} 
+\index{Actor@{Actor}!getParent@{getParent}}
+\index{getParent@{getParent}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_actor}{Actor}}$\ast$ Actor\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_a63e240eb170fea63ad84545f81b59db5}\label{class_actor_a63e240eb170fea63ad84545f81b59db5}} 
+\index{Actor@{Actor}!getParentPosition@{getParentPosition}}
+\index{getParentPosition@{getParentPosition}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{getParentPosition()}{getParentPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Actor\+::get\+Parent\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_actor_a3e31a95a0ff0f349cf4ec851acbe1226}\label{class_actor_a3e31a95a0ff0f349cf4ec851acbe1226}} 
+\index{Actor@{Actor}!getParentRotation@{getParentRotation}}
+\index{getParentRotation@{getParentRotation}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{getParentRotation()}{getParentRotation()}}
+{\footnotesize\ttfamily glm\+::quat Actor\+::get\+Parent\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_actor_a5113b814194b5ba37d73498dd4e90fe2}\label{class_actor_a5113b814194b5ba37d73498dd4e90fe2}} 
+\index{Actor@{Actor}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Actor\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_a0f073d2c10e8723d12962d7a79f8344c}\label{class_actor_a0f073d2c10e8723d12962d7a79f8344c}} 
+\index{Actor@{Actor}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
+{\footnotesize\ttfamily glm\+::quat Actor\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_a16172bbbf6bcf1aefddf88ad5fdd6173}\label{class_actor_a16172bbbf6bcf1aefddf88ad5fdd6173}} 
+\index{Actor@{Actor}!getScale@{getScale}}
+\index{getScale@{getScale}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily glm\+::vec3 Actor\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_a3c623f756d6c51ac464630b26fcfc440}\label{class_actor_a3c623f756d6c51ac464630b26fcfc440}} 
+\index{Actor@{Actor}!getTransform@{getTransform}}
+\index{getTransform@{getTransform}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{getTransform()}{getTransform()}}
+{\footnotesize\ttfamily glm\+::mat4 Actor\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_actor_a150c496960a2fcf1d34e54f8c0d16a4e}\label{class_actor_a150c496960a2fcf1d34e54f8c0d16a4e}} 
+\index{Actor@{Actor}!setParent@{setParent}}
+\index{setParent@{setParent}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void Actor\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_actor}{Actor}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_a01133270ca4c5b296ea14fb0be687259}\label{class_actor_a01133270ca4c5b296ea14fb0be687259}} 
+\index{Actor@{Actor}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Actor\+::set\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_aa36717db00c845343cd4cb331d155cf4}\label{class_actor_aa36717db00c845343cd4cb331d155cf4}} 
+\index{Actor@{Actor}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
+{\footnotesize\ttfamily void Actor\+::set\+Rotation (\begin{DoxyParamCaption}\item[{glm\+::quat}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_abd05505bd3d4ccf83d90fc70c42394c3}\label{class_actor_abd05505bd3d4ccf83d90fc70c42394c3}} 
+\index{Actor@{Actor}!setScale@{setScale}}
+\index{setScale@{setScale}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void Actor\+::set\+Scale (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_actor_ae3e0e0d1c3c26eb196707dd9b0fe3a56}\label{class_actor_ae3e0e0d1c3c26eb196707dd9b0fe3a56}} 
+\index{Actor@{Actor}!start@{start}}
+\index{start@{start}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual bool Actor\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_box_a7ed2c604043f13f1d18ee9f1ca456109}{Box}}.
+
+\mbox{\Hypertarget{class_actor_a1393f0af41b34f014e6a515d4827a167}\label{class_actor_a1393f0af41b34f014e6a515d4827a167}} 
+\index{Actor@{Actor}!update@{update}}
+\index{update@{update}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool Actor\+::update (\begin{DoxyParamCaption}\item[{double}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_camera_aed792b8b5f7579420f1b3b6fe9b2a6c3}{Camera}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_actor_a49de271f454ef5e9d166e1f298d54800}\label{class_actor_a49de271f454ef5e9d166e1f298d54800}} 
+\index{Actor@{Actor}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
+{\footnotesize\ttfamily glm\+::vec3 Actor\+::m\+\_\+position \{ 0.\+0f, 0.\+0f, 0.\+0f \}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_actor_a1da82e35d5aebff7514d8e1ed42a7201}\label{class_actor_a1da82e35d5aebff7514d8e1ed42a7201}} 
+\index{Actor@{Actor}!m\_rotation@{m\_rotation}}
+\index{m\_rotation@{m\_rotation}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{m\_rotation}{m\_rotation}}
+{\footnotesize\ttfamily glm\+::quat Actor\+::m\+\_\+rotation \{ 1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f \}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_actor_a0d0f572e4852e4922c1382d5d2c79f99}\label{class_actor_a0d0f572e4852e4922c1382d5d2c79f99}} 
+\index{Actor@{Actor}!m\_scale@{m\_scale}}
+\index{m\_scale@{m\_scale}!Actor@{Actor}}
+\doxysubsubsection{\texorpdfstring{m\_scale}{m\_scale}}
+{\footnotesize\ttfamily glm\+::vec3 Actor\+::m\+\_\+scale \{ 1.\+0f, 1.\+0f, 1.\+0f \}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_actor_8h}{Actor.\+h}}\item 
+\mbox{\hyperlink{_actor_8cpp}{Actor.\+cpp}}\end{DoxyCompactItemize}
